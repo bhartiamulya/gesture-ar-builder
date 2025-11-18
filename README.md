@@ -10,23 +10,6 @@ Gesture Blocks AR is a WebXR sandbox that lets you spawn and manipulate 3D block
 - Three.js scene with reticle visualization and reusable block factory/material system.
 - Local bundling of MediaPipe assets to avoid network fetch failures.
 
-## Requirements
-
-- Node.js 18+
-- npm (bundled with Node)
-- Chrome or Chromium with WebXR support
-- (Optional) Chrome Immersive Web Emulator extension for desktop testing
-- AR-capable hardware (Android + ARCore, Quest browser, etc.) to see true camera passthrough. The emulator only renders a synthetic room.
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-The Vite dev server defaults to [http://localhost:5173](http://localhost:5173).
-
 ## Using the App
 
 ### Desktop (Immersive Web Emulator)
@@ -52,18 +35,6 @@ Physical webcam gestures are still supported. Switch the emulator to tracked-han
 2. Open the URL on an AR-capable device (Chrome Android with ARCore runtime, Quest browser, etc.).
 3. Grant camera permission and follow the on-screen reticle cues. Gestures operate exactly as in the simulator.
 
-## Development Scripts
-
-- `npm run dev` – Start Vite dev server.
-- `npm run build` – Produce a production bundle.
-- `npm run preview` – Preview the production build locally.
-
-## Limitations & Known Issues
-
-- The emulator renders a synthetic gray room; it cannot replicate camera passthrough. Use real hardware to evaluate visual fidelity.
-- Hand tracking quality depends on lighting and camera resolution. MediaPipe occasionally drops frames on low-end hardware.
-- There are no automated tests yet. Manual testing is required after changes that touch gesture logic or block management.
-
 ## Project Structure
 
 ```
@@ -77,12 +48,4 @@ public/
   mediapipe/    MediaPipe assets served locally
 ```
 
-## Contributing
 
-1. Fork and clone the repository.
-2. Run the dev server and verify the emulator flow before opening a PR.
-3. Document any new keyboard shortcuts or simulator affordances in this README.
-
-## License
-
-MIT (see `LICENSE` if present). If no license file accompanies this repo, treat it as "all rights reserved" until one is added.
