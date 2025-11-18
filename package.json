@@ -1,0 +1,27 @@
+{
+  "name": "gesture-ar-builder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mediapipe/camera_utils": "0.3.1675466862",
+    "@mediapipe/hands": "0.4.1675469240",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.160.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.2",
+    "@types/three": "0.164.0",
+    "@types/webxr": "0.5.14",
+    "@vitejs/plugin-react": "4.3.1",
+    "typescript": "5.4.5",
+    "vite": "5.2.11"
+  }
+}
